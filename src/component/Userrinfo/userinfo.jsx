@@ -58,12 +58,9 @@ function UserInfo() {
 
   const updateSetting = async (field, value) => {
     try {
-      await api.patch(
-        "/me/setting",
-        { [field]: value },
-        { withCredentials: true }
-      );
+      const res = await api.patch("/me/setting", { [field]: value });
       console.log(`${field} updated to`, value);
+      console.log("test", res);
       return true;
     } catch (error) {
       console.error(`${field} 업데이트 실패`, error?.response || error);
@@ -130,6 +127,8 @@ function UserInfo() {
     navigate("/profile");
   };
 
+  console.log("hdie state", myInfoOn);
+
   return (
     <>
       <div className={styles.InfoContainer}>
@@ -165,11 +164,17 @@ function UserInfo() {
                 className={`${styles.DiaryButton} ${myInfoOn ? styles.isOn : ""}`}
                 onClick={handleOnClick2}
               >
-                <div
+                {/* <div
                   className={`${styles.Circle} ${
                     myInfoOn ? styles.UpdateCircle : ""
                   }`}
-                />
+                /> */}
+                {/* <div className={styles.Circle} /> */}
+                {myInfoOn === true ? (
+                  <div className={styles.HideCircle} />
+                ) : (
+                  <div className={styles.Circle} />
+                )}
               </div>
             </div>
 

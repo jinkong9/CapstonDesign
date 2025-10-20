@@ -118,6 +118,18 @@ body {
 .UpdateCircle {
   left: 2.45vw;
 }
+.HideCircle {
+  position: absolute;
+  margin-left: 30.5%;
+  left: 2.45vw;
+  width: 2vw;
+  height: 4vh;
+  background-color: white;
+  border-radius: 50%;
+  transition: left 0.3s ease;
+  cursor: pointer;
+}
+
 .ProFileLink {
   margin-bottom: 2%;
   color: black;

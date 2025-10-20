@@ -43,12 +43,12 @@ function Writediary() {
           title: inputData.title,
           content: inputData.content,
         },
-        { withCredentials: true },
+        { withCredentials: true }
       );
       console.log("일기 작성 성공:", response.data);
       if (response.data.previous_diaries.length > 1) {
         const result = window.confirm(
-          "이 주제로 1번 이상 일기를 작성하셨습니다. 계속 작성할까요?",
+          "이 주제로 1번 이상 일기를 작성하셨습니다. 계속 작성할까요?"
         );
         if (result) {
           setPrevious(response.data.previous_diaries);
@@ -83,27 +83,29 @@ function Writediary() {
         <input type="checkbox" onClick={checkClickEvent} />
         <label>자유 주제로 작성하기</label>
       </div>
-      <form onSubmit={handleSubmit} className={styles.FormCotainer}>
-        <input
-          className={styles.InputTtitle}
-          name="title"
-          type="text"
-          placeholder="제목"
-          value={inputData.title}
-          onChange={handleChange}
-        />
-        <div className={styles.MyInfoBox}>
-          <p>{date}</p>
+      <form className={styles.formContain} onSubmit={handleSubmit}>
+        <div className={styles.textareaContain}>
+          <input
+            className={styles.InputTtitle}
+            name="title"
+            type="text"
+            placeholder="제목"
+            value={inputData.title}
+            onChange={handleChange}
+          />
+          <div className={styles.MyInfoBox}>
+            <p>{date}</p>
+          </div>
+          <div className={styles.Line}></div>
+          <br />
+          <textarea
+            className={styles.InputText}
+            name="content"
+            placeholder="내용을 입력해 주세요"
+            value={inputData.content}
+            onChange={handleChange}
+          />
         </div>
-        <div className={styles.Line}></div>
-        <br />
-        <textarea
-          className={styles.InputText}
-          name="content"
-          placeholder="내용을 입력해 주세요"
-          value={inputData.content}
-          onChange={handleChange}
-        />
         <button className={styles.SubmitButton} type="submit">
           저장하기
         </button>
