@@ -45,8 +45,11 @@ function UserInfo() {
     try {
       const res = await api.get("/me/setting", { withCredentials: true });
       console.log("설정 불러오기 성공:", res.data);
-      setMyDiaryOn(!!res.data.hide_diaries);
-      setMyInfoOn(!!res.data.hide_profile);
+
+      const settings = res.data.settings || res.data;
+
+      setMyDiaryOn(!!settings.hide_diaries);
+      setMyInfoOn(!!settings.hide_profile);
     } catch (err) {
       console.log("설정 불러오기 실패:", err?.response);
     }
@@ -58,9 +61,13 @@ function UserInfo() {
 
   const updateSetting = async (field, value) => {
     try {
-      const res = await api.patch("/me/setting", { [field]: value });
+      const res = await api.patch(
+        "/me/setting",
+        { [field]: value },
+        { withCredentials: true }
+      );
       console.log(`${field} updated to`, value);
-      console.log("test", res);
+      console.log("패치 결과:", res.data);
       return true;
     } catch (error) {
       console.error(`${field} 업데이트 실패`, error?.response || error);
@@ -127,7 +134,7 @@ function UserInfo() {
     navigate("/profile");
   };
 
-  console.log("hdie state", myInfoOn);
+  console.log("hide state", myInfoOn);
 
   return (
     <>
@@ -164,13 +171,7 @@ function UserInfo() {
                 className={`${styles.DiaryButton} ${myInfoOn ? styles.isOn : ""}`}
                 onClick={handleOnClick2}
               >
-                {/* <div
-                  className={`${styles.Circle} ${
-                    myInfoOn ? styles.UpdateCircle : ""
-                  }`}
-                /> */}
-                {/* <div className={styles.Circle} /> */}
-                {myInfoOn === true ? (
+                {myInfoOn ? (
                   <div className={styles.HideCircle} />
                 ) : (
                   <div className={styles.Circle} />
