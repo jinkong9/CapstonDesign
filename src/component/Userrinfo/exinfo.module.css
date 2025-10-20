@@ -103,6 +103,10 @@ body {
 .MyDiaryLink {
   color: #685036;
 }
+.LockImg {
+  width: 14vw;
+  opacity: 0.5;
+}
 
 @media (max-width: 1280px) {
   .InfoContainer {
