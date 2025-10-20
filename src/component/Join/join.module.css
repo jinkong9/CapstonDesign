@@ -19,29 +19,41 @@
   justify-content: center;
   margin-bottom: 1em;
 }
+
+.joinContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
 /* 회원가입 글자 */
 .joinwrite {
   font-size: 32px; /* 조금 줄이기 */
+  font-weight: bold;
   padding-bottom: 0.5em;
 }
-/* 회원가입 요소 박스 */
 .joincon {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  width: 24em; /* 줄여서 화면에 맞춤 */
-  height: 4em;
-  margin-bottom: 0.8em;
+  width: 24em;
+  height: 3.5em;
   background-color: #f2f2f2;
   border: 1px solid black;
   border-radius: 25px;
   font-size: 0.9em;
   padding-left: 12px;
   text-align: left;
-  transition: all 0.3s ease-in-out;
+  margin-bottom: 1em;
 }
-
+.warning {
+  color: red;
+  margin: 0;
+  padding-left: 0.5em;
+  font-size: 0.8em;
+}
 .agreement {
   margin: 20px 0;
 }
@@ -114,12 +126,6 @@
 .agreebox:hover {
   background-color: #f9dcba;
   transform: scale(1.05);
-}
-.joinContainer {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
 }
 @media (max-width: 450px) {
   .joinwrite {
