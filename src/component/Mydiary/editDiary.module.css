@@ -76,27 +76,27 @@
     width: 60vw;
     height: 70vh;
   }
-  /* 일기 주제 적는곳 */
+ 
   .InputTtitle {
     margin-top: 5%;
     width: 20vw;
     height: 7vh;
     font-size: 2.6vh;
   }
-  /* 선 */
+ 
   .Line {
     margin-top: 1%;
     width: 80%;
     height: 1px;
   }
-  /* 일기 본문 */
+ 
   .InputText {
     margin-top: 2%;
     width: 100%;
     height: 40vh;
     font-size: 2vh;
   }
-  /* 제출버튼 */
+ 
   .SubmitButton {
     position: absolute;
     width: 11%;
@@ -104,10 +104,7 @@
     border-radius: 10px;
     font-size: 1em;
   }
-  /* 자유주제 클릭 */
-  .Checkbox {
-    margin-top: 1%;
-  }
+  
 }
 
 @media (max-width: 1024px) {
