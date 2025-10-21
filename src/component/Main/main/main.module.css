@@ -90,6 +90,9 @@ body {
   cursor: pointer;
   gap: 5%;
 }
+.WriteButton:hover {
+  transform: scale(1.05);
+}
 /*버튼안에 이미지 */
 .ButtonImage {
   height: 2vh;
@@ -138,6 +141,10 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.UserInfoButton:hover {
+  transform: scale(1.05);
 }
 
 /* 다른사람 쓴 일기보는 박스 */

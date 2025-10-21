@@ -64,7 +64,7 @@ function UserInfo() {
       const res = await api.patch(
         "/me/setting",
         { [field]: value },
-        { withCredentials: true }
+        { withCredentials: true },
       );
       console.log(`${field} updated to`, value);
       console.log("패치 결과:", res.data);
@@ -171,11 +171,11 @@ function UserInfo() {
                 className={`${styles.DiaryButton} ${myInfoOn ? styles.isOn : ""}`}
                 onClick={handleOnClick2}
               >
-                {myInfoOn ? (
-                  <div className={styles.HideCircle} />
-                ) : (
-                  <div className={styles.Circle} />
-                )}
+                <div
+                  className={`${styles.Circle} ${
+                    myInfoOn ? styles.UpdateCircle : ""
+                  }`}
+                />
               </div>
             </div>
 
