@@ -43,12 +43,12 @@ function Writediary() {
           title: inputData.title,
           content: inputData.content,
         },
-        { withCredentials: true }
+        { withCredentials: true },
       );
       console.log("일기 작성 성공:", response.data);
-      if (response.data.previous_diaries.length > 1) {
+      if (response.data.previous_diaries.length > 0) {
         const result = window.confirm(
-          "이 주제로 1번 이상 일기를 작성하셨습니다. 계속 작성할까요?"
+          "이 주제로 1번 이상 일기를 작성하셨습니다. 계속 작성할까요?",
         );
         if (result) {
           setPrevious(response.data.previous_diaries);

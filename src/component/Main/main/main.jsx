@@ -131,9 +131,9 @@ function Main() {
       <main className={styles.MainContainer}>
         <div className={styles.Maintop}>
           <h2 className={styles.MainText}>최근 사람들이 쓴 일기에요!</h2>
-          <div onClick={GoToUserListPage} className={styles.UserInfoButton}>
+          <button onClick={GoToUserListPage} className={styles.UserInfoButton}>
             사용자 둘러보기
-          </div>
+          </button>
         </div>
         <Slider
           key={diaryList.length}

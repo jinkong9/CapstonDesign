@@ -131,16 +131,13 @@ body {
 .UserInfoButton {
   position: absolute;
   right: 5%;
-  top: 55%;
-  width: 8vw;
+  width: 7vw;
   height: 5vh;
   background-color: #7b5d43;
   border-radius: 13px;
   color: white;
   cursor: pointer;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  border: none;
 }
 
 .UserInfoButton:hover {
@@ -301,7 +298,6 @@ body {
     width: 8vw;
     height: 3.5vh;
     font-size: 1.4vh;
-    margin-bottom: 30%;
   }
 }
 @media (max-width: 1024px) {
@@ -340,10 +336,9 @@ body {
     font-weight: bold;
   }
   .UserInfoButton {
-    width: 6vw;
+    width: 7.5vw;
     height: 3.9vh;
-    font-size: 1.2vh;
-    margin-bottom: 30%;
+    font-size: 1.3vh;
   }
 }
 @media (max-width: 768px) {
@@ -391,10 +386,9 @@ body {
     font-weight: bold;
   }
   .UserInfoButton {
-    width: 6.2vw;
+    width: 8.5vw;
     height: 3.9vh;
     font-size: 1.1vh;
-    margin-bottom: 30%;
   }
   .FooterImg {
     width: 35%;
@@ -453,10 +447,9 @@ body {
     font-weight: bold;
   }
   .UserInfoButton {
-    width: 8vw;
+    width: 9vw;
     height: 3.9vh;
     font-size: 1.1vh;
-    margin-bottom: 30%;
   }
   .FooterBox {
     width: 24vw;
@@ -521,7 +514,6 @@ body {
     width: 8vw;
     height: 3.9vh;
     font-size: 1.1vh;
-    margin-bottom: 30%;
   }
   .FooterImg {
     width: 35%;
@@ -532,32 +524,43 @@ body {
 }
 @media (max-width: 480px) {
   .SubNavBox {
-    height: 2.7vh;
+    height: 2.9vh;
   }
   .SubText {
-    font-size: 1.7vh;
+    font-size: 1.4vh;
   }
-  .HeadBox {
-    width: 50vw;
-    height: 30vh;
+  .Header {
+    height: 37vh;
+    gap: 2%;
+  }
+  .HeadText {
+    font-size: 2.5vh;
   }
   .HeadBoxText {
-    font-size: 2.7vw;
+    font-size: 2vh;
+    margin-top: 5%;
+  }
+  .HeadBox {
+    width: 65vw;
+    height: 23vh;
   }
   .Prompt {
-    font-size: 2vh;
+    font-size: 1.7vh;
   }
   .WriteButton {
-    font-size: 1vh;
-    font-weight: bold;
-    width: 9.5vw;
-    height: 3.2vh;
+    font-size: 1.1vh;
+    width: 12vw;
+    height: 3vh;
   }
   .ButtonImage {
-    height: 1.3vh;
+    margin-left: 3.7%;
+    margin-right: -12%;
+    height: 1.2vh;
+    width: 0.8vh;
   }
   .MainContainer {
-    height: 50vh;
+    height: 45vh;
+    gap: 10%;
   }
   .DaliyBox {
     width: 50vw;
@@ -595,10 +598,9 @@ body {
     font-weight: bold;
   }
   .UserInfoButton {
-    width: 10vw;
-    height: 3.9vh;
+    width: 12.5vw;
+    height: 3.5vh;
     font-size: 1.1vh;
-    margin-bottom: 30%;
   }
   .footerCnontainer {
     height: 35vh;
@@ -617,21 +619,47 @@ body {
   }
 }
 
-@media (max-width: 450px) {
+@media (max-width: 451px) {
   .SubNavBox {
-    height: 2.3vh;
+    height: 2.7vh;
   }
   .SubText {
     font-size: 1.7vw;
   }
+  .Header {
+    height: 37vh;
+    gap: 2%;
+  }
+  .HeadText {
+    font-size: 2vh;
+  }
+  .HeadBoxText {
+    font-size: 1.7vh;
+    margin-top: 5%;
+  }
+  .HeadBox {
+    width: 65vw;
+    height: 20vh;
+  }
+  .Prompt {
+    font-size: 1.4vh;
+  }
   .WriteButton {
+    font-size: 0.8vh;
     width: 13vw;
+    height: 3vh;
+  }
+  .ButtonImage {
+    margin-left: 3.7%;
+    margin-right: -12%;
+    height: 1.2vh;
+    width: 0.8vh;
   }
   .DaliyBox {
     width: 55vw;
   }
   .UserInfoButton {
-    width: 12vw;
+    width: 13vw;
     font-size: 1.4vw;
   }
   .Footertext {
@@ -639,10 +667,104 @@ body {
   }
 }
 
-@media (max-width: 400px) {
-  body {
-    height: auto !important;
+@media (max-width: 406px) {
+  .SubNavBox {
+    height: 2.7vh;
   }
+  .SubText {
+    font-size: 1.7vw;
+  }
+  .Header {
+    height: 37vh;
+    gap: 2%;
+  }
+  .HeadText {
+    font-size: 2vh;
+  }
+  .HeadBoxText {
+    font-size: 1.5vh;
+  }
+  .HeadBox {
+    width: 65vw;
+    height: 20vh;
+  }
+  .Prompt {
+    margin-top: -3%;
+    font-size: 1.4vh;
+  }
+  .WriteButton {
+    font-size: 0.75vh;
+    width: 14vw;
+    height: 2.5vh;
+  }
+  .ButtonImage {
+    margin-left: 3.7%;
+    margin-right: -12%;
+    height: 1.2vh;
+    width: 0.8vh;
+  }
+  .MainText {
+    margin-top: -10%;
+    font-size: 2vh;
+    color: black;
+  }
+  .MainContainer {
+    height: 26vh;
+  }
+  .DaliyBox {
+    width: 40vw;
+    height: 19vh;
+  }
+  .DaliyTitleText {
+    margin-top: -1%;
+    font-weight: bold;
+    font-size: 1.4vh;
+  }
+  .DaliyDateText {
+    margin-left: 0;
+    margin-bottom: 0;
+    font-size: 1vh;
+  }
+  .DaliyTitle2Text {
+    margin-top: -0.5%;
+    font-size: 1.2vh;
+    font-weight: bold;
+  }
+  .DaliyContentText {
+    font-size: 1vh;
+    font-weight: bold;
+  }
+  .UserInfoButton {
+    font-size: 1.3vw;
+    width: 10vw;
+    height: 2.5vh;
+  }
+  .Line {
+    margin-bottom: 5%;
+  }
+  .MyProfile {
+    margin-top: 0%;
+    margin-right: auto;
+    margin-bottom: 0px;
+    margin-left: 4%;
+    width: 5.5vw;
+    height: 5.5vw;
+  }
+  .footerCnontainer {
+    height: 30vh;
+  }
+  .FooterTitleText {
+    padding: 3%;
+    font-size: 1.9vh;
+    margin-left: 0%;
+  }
+  .FooterBox {
+    width: 23vw;
+    height: 14vh;
+  }
+}
+
+@media (max-width: 400px) {
   .SubNavBox {
     height: 2vh;
   }
@@ -711,7 +833,6 @@ body {
     font-weight: bold;
   }
   .UserInfoButton {
-    top: 0%;
     font-size: 1.15vw;
     width: 8vw;
     height: 2.5vh;
