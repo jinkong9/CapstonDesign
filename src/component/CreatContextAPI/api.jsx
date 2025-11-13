@@ -12,7 +12,6 @@ api.interceptors.request.use(
   (config) => {
     const accessToken = cookies.get("access_token");
 
-    // ✅ refresh 요청에는 access_token 안 붙이기
     if (accessToken && !config.url.includes("/auth/refresh")) {
       config.headers["Authorization"] = `Bearer ${accessToken}`;
     }
