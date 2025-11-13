@@ -1,41 +1,73 @@
 @import "pretendard/dist/web/static/pretendard.css";
 
-body {
-  height: 100%;
-  font-family: "Pretendard", sans-serif;
-}
-
 .InfoContainer {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   gap: 11%;
+  margin-top: 10%;
+}
+.flex2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+/* 내정보 아래쪽 박스 */
+.InfoBox {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 1vw;
+  height: 100%;
+  width: 30%;
+  gap: 8%;
+}
+.flex1 {
+  display: flex;
+  width: 100%;
+  gap: 20%;
+  align-items: center;
+  justify-content: center;
 }
 /* 내정보 박스 */
 .MySecurityBox {
-  margin-top: 9%;
-  margin-left: 5%;
-  width: 33vw;
-  height: 40vh;
+  width: 35vw;
+  height: 32vh;
   background-color: #f9eede;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.MyInfoBox {
+  width: 35vw;
+  height: 32vh;
+  background-color: #f9eede;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.MyInfoBoxflex {
+  display: flex;
+  width: 80%;
+}
+.MyInfoBoxInfo {
+  font-size: 1vw;
+  font-weight: 400;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 8%;
 }
 /* 내 프로필 보안 텍스트 */
 .Titlebox {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 33vw;
-  height: 9vh;
-  background-color: #f5e7d2;
-  text-align: center;
-  font-weight: 400;
-  font-size: 1.6vw;
-}
-/* 숨겼을 때 내 정보 텍스트 */
-.Titlebox2 {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 37vw;
+  width: 35vw;
   height: 9vh;
   background-color: #f5e7d2;
   text-align: center;
@@ -44,8 +76,6 @@ body {
 }
 /* 프로필 사진박스 */
 .ProfileBox {
-  margin-left: 10%;
-  margin-top: 6%;
   width: 9vw;
   height: 17vh;
   background-color: white;
@@ -54,27 +84,11 @@ body {
   object-fit: cover;
 }
 
-/* 내정보 아래쪽 박스 */
-.InfoBox {
-  display: flex;
-  flex-direction: column;
-  margin-left: 60%;
-  margin-top: -27%;
-  font-size: 1vw;
-  height: 100vh;
-  gap: 1.8%;
-}
 /* 프로필 이미지 */
 .MyProfileImg {
   width: 100%;
   height: 100%;
   object-fit: cover;
-}
-/* 일기숨김 자리 */
-.MyDiaryContinaer {
-  margin-top: 5%;
-  display: flex;
-  flex-direction: row;
 }
 /* 잠굼 이미지 */
 .LockImg {
@@ -90,44 +104,38 @@ body {
   align-items: center;
   height: 10vh;
 }
-/* 누르면 없어지는 버튼 */
+/* 일기숨김 자리 */
+.MyDiaryContinaer {
+  margin-top: 5%;
+  display: flex;
+  flex-direction: row;
+  gap: 10%;
+}
+
 .DiaryButton {
-  margin-left: 5%;
   background-color: #d9d9d9;
   width: 4.4vw;
   height: 4vh;
   border-radius: 20px;
+  position: relative;
 }
-/* 버튼 동그라미 */
+.isOn {
+  background-color: #cdb98f;
+}
 .Circle {
   position: absolute;
-  margin-left: 30.5%;
   left: 0;
   width: 2vw;
   height: 4vh;
   background-color: white;
   border-radius: 50%;
-  transition: left 0.3s ease;
   cursor: pointer;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: transform 0.3s ease;
 }
-/* 공개일 때 */
-.isOn {
-  background-color: #cdb98f;
-}
-/* 좌우로 움직이는 원 */
 .UpdateCircle {
-  left: 2.45vw;
-}
-.HideCircle {
-  position: absolute;
-  margin-left: 30.5%;
-  left: 2.45vw;
-  width: 2vw;
-  height: 4vh;
-  background-color: white;
-  border-radius: 50%;
-  transition: left 0.3s ease;
-  cursor: pointer;
+  transform: translate(120%, -50%);
 }
 
 .ProFileLink {
@@ -140,29 +148,8 @@ body {
   color: black;
   text-decoration: none;
 }
-.MyInfoBox {
-  margin-top: 9%;
-  margin-left: 5%;
-  width: 37vw;
-  height: 40vh;
-  background-color: #f9eede;
-  text-align: left;
-}
-.MyInfoBoxflex {
-  display: flex;
-  flex-direction: row;
-}
-.MyInfoBoxInfo {
-  font-size: 1vw;
-  font-weight: 400;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-}
+
 .MyActivityCon {
-  margin-top: 10%;
   display: flex;
   flex-direction: column;
   justify-content: center;
