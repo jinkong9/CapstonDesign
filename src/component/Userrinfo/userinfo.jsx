@@ -139,74 +139,80 @@ function UserInfo() {
   return (
     <>
       <div className={styles.InfoContainer}>
-        <div className={styles.MySecurityBox}>
+        <div className={styles.flex2}>
           <div className={styles.Titlebox}>내 프로필 및 보안</div>
-          <img
-            src={`https://daisy.wisoft.io/yehwan/app1/avatars/${avatar}`}
-            className={styles.ProfileBox}
-            alt="profile"
-          />
-          <div className={styles.InfoBox}>
-            <div onClick={profileClick} className={styles.ProFileLink}>
-              프로필 변경하기
-            </div>
+          <div className={styles.MySecurityBox}>
+            <div className={styles.flex1}>
+              <img
+                src={`https://daisy.wisoft.io/yehwan/app1/avatars/${avatar}`}
+                className={styles.ProfileBox}
+                alt="profile"
+              />
+              <div className={styles.InfoBox}>
+                <div onClick={profileClick} className={styles.ProFileLink}>
+                  프로필 변경하기
+                </div>
 
-            <div className={styles.MyDiaryContinaer}>
-              <span>내 일기 숨김</span>
-              <div
-                className={`${styles.DiaryButton} ${myDiaryOn ? styles.isOn : ""}`}
-                onClick={handleOnClick}
-              >
-                <div
-                  className={`${styles.Circle} ${
-                    myDiaryOn ? styles.UpdateCircle : ""
-                  }`}
-                />
+                <div className={styles.MyDiaryContinaer}>
+                  <span>내 일기 숨김</span>
+                  <div
+                    className={`${styles.DiaryButton} ${myDiaryOn ? styles.isOn : ""}`}
+                    onClick={handleOnClick}
+                  >
+                    <div
+                      className={`${styles.Circle} ${
+                        myDiaryOn ? styles.UpdateCircle : ""
+                      }`}
+                    />
+                  </div>
+                </div>
+
+                <div className={styles.MyDiaryContinaer}>
+                  <span>내 정보 숨김</span>
+                  <div
+                    className={`${styles.DiaryButton} ${myInfoOn ? styles.isOn : ""}`}
+                    onClick={handleOnClick2}
+                  >
+                    <div
+                      className={`${styles.Circle} ${
+                        myInfoOn ? styles.UpdateCircle : ""
+                      }`}
+                    />
+                  </div>
+                </div>
+
+                <Link onClick={ChangePwPage} className={styles.PsswordLink}>
+                  비밀번호 변경하기
+                </Link>
               </div>
             </div>
-
-            <div className={styles.MyDiaryContinaer}>
-              <span>내 정보 숨김</span>
-              <div
-                className={`${styles.DiaryButton} ${myInfoOn ? styles.isOn : ""}`}
-                onClick={handleOnClick2}
-              >
-                <div
-                  className={`${styles.Circle} ${
-                    myInfoOn ? styles.UpdateCircle : ""
-                  }`}
-                />
-              </div>
-            </div>
-
-            <Link onClick={ChangePwPage} className={styles.PsswordLink}>
-              비밀번호 변경하기
-            </Link>
           </div>
         </div>
 
-        <div className={styles.MyInfoBox}>
-          <div className={styles.Titlebox2}>내 정보</div>
-          {myInfoOn ? (
-            <div className={styles.LockImgContianer}>
-              <img className={styles.LockImg} src="./lock.png" alt="lock" />
-            </div>
-          ) : (
-            <div className={styles.MyInfoBoxflex}>
-              <div className={styles.MyInfoBoxInfo}>
-                <p>이름</p>
-                <p>이메일</p>
-                <p>가입일자</p>
-                <p>일기 수</p>
+        <div className={styles.flex2}>
+          <div className={styles.Titlebox}>내 정보</div>
+          <div className={styles.MyInfoBox}>
+            {myInfoOn ? (
+              <div className={styles.LockImgContianer}>
+                <img className={styles.LockImg} src="./lock.png" alt="lock" />
               </div>
-              <div className={styles.MyInfoBoxInfo}>
-                <p>{myData.full_name}</p>
-                <p>{myData.email}</p>
-                <p>{myData.registered_at}</p>
-                <p>{myData.diary_count}</p>
+            ) : (
+              <div className={styles.MyInfoBoxflex}>
+                <div className={styles.MyInfoBoxInfo}>
+                  <p>이름</p>
+                  <p>이메일</p>
+                  <p>가입일자</p>
+                  <p>일기 수</p>
+                </div>
+                <div className={styles.MyInfoBoxInfo}>
+                  <p>{myData.full_name}</p>
+                  <p>{myData.email}</p>
+                  <p>{myData.registered_at}</p>
+                  <p>{myData.diary_count}</p>
+                </div>
               </div>
-            </div>
-          )}
+            )}
+          </div>
         </div>
       </div>
 
