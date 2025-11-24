@@ -139,10 +139,10 @@ function UserInfo() {
   return (
     <>
       <div className={styles.InfoContainer}>
-        <div className={styles.flex2}>
+        <div className={styles.LRBoxFlex}>
           <div className={styles.Titlebox}>내 프로필 및 보안</div>
           <div className={styles.MySecurityBox}>
-            <div className={styles.flex1}>
+            <div className={styles.LeftBoxFlex}>
               <img
                 src={`https://daisy.wisoft.io/yehwan/app1/avatars/${avatar}`}
                 className={styles.ProfileBox}
@@ -189,7 +189,7 @@ function UserInfo() {
           </div>
         </div>
 
-        <div className={styles.flex2}>
+        <div className={styles.LRBoxFlex}>
           <div className={styles.Titlebox}>내 정보</div>
           <div className={styles.MyInfoBox}>
             {myInfoOn ? (

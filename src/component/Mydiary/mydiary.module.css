@@ -4,11 +4,9 @@
   justify-content: center;
   display: flex;
   flex-direction: column;
-  font-family: "Pretendard", sans-serif;
   width: 100vw;
   background-color: #f5e7d2;
   position: relative;
-  min-height: 100vh;
 }
 .MainTitle {
   display: flex;
@@ -238,7 +236,7 @@
   }
   .DailyListWrapper {
     grid-template-columns: repeat(2, 1fr);
-    row-gap: 15px;
+    row-gap: 40px;
     height: 85%;
   }
   .DaliyBox {
@@ -300,7 +298,7 @@
     width: 8vw;
   }
   .DailyListWrapper {
-    row-gap: 10px;
+    row-gap: 40px;
   }
 
   .ButtonContainer {
@@ -319,6 +317,32 @@
   }
 }
 
+@media (max-width: 576px) {
+  .MainTitle {
+    height: 10vh;
+  }
+  .SortButton {
+    width: 10vw;
+  }
+  .DailyListWrapper {
+    row-gap: 50px;
+  }
+
+  .ButtonContainer {
+    margin-top: 40%;
+    gap: 60px;
+  }
+  .DeleteButton {
+    width: 11vw;
+    height: 4vh;
+    font-size: 0.65rem;
+  }
+  .EditButton {
+    width: 11vw;
+    height: 4vh;
+    font-size: 0.65rem;
+  }
+}
 @media (max-width: 480px) {
   .MainTitle {
     font-size: 1.2em;
@@ -327,7 +351,8 @@
     gap: 25px;
   }
   .color {
-    height: 180vh;
+    height: auto;
+    background-color: #f5e7d2;
   }
 
   .SortButton {
@@ -384,6 +409,35 @@
   }
   .EditButton {
     width: 12vw;
+    height: 4vh;
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 451px) {
+  .DeleteButton {
+    width: 14vw;
+    height: 4vh;
+    font-size: 0.65rem;
+  }
+  .EditButton {
+    width: 14vw;
+    height: 4vh;
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 431px) {
+  .ButtonContainer {
+    margin-top: 55%;
+  }
+  .DeleteButton {
+    width: 14vw;
+    height: 4vh;
+    font-size: 0.65rem;
+  }
+  .EditButton {
+    width: 14vw;
     height: 4vh;
     font-size: 0.65rem;
   }
