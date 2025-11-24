@@ -362,6 +362,106 @@ body {
     width: 10vw;
   }
 }
+@media (max-width: 450px) {
+  .InfoContainer {
+    margin-top: 8%;
+  }
+  .Titlebox {
+    width: 65vw;
+    height: 7vh;
+    font-weight: 400;
+    font-size: 2.5vw;
+  }
+  .MySecurityBox {
+    width: 65vw;
+    height: 27vh;
+  }
+  .Infobox {
+    font-size: 1.3vh;
+  }
+  .Infobox2 {
+    font-size: 1.3vh;
+  }
+  .ImgInfoFlex {
+    gap: 50px;
+  }
+  .InfoFlex {
+    gap: 10px;
+  }
+  .ProfileBox {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .MyDIaryStateContianer {
+    margin-top: 10%;
+    width: 70vw;
+    height: 35vh;
+  }
+  .Titlebox2 {
+    width: 70vw;
+    height: 7vh;
+    font-weight: 400;
+    font-size: 2.5vw;
+  }
+  .RecentActivityBox {
+    margin-top: 9%;
+    font-size: 1rem;
+    gap: 50px;
+  }
+  .DiaryImg {
+    width: 10vw;
+  }
+}
+@media (max-width: 430px) {
+  .InfoContainer {
+    margin-top: 8%;
+  }
+  .Titlebox {
+    width: 65vw;
+    height: 7vh;
+    font-weight: 400;
+    font-size: 2.5vw;
+  }
+  .MySecurityBox {
+    width: 65vw;
+    height: 27vh;
+  }
+  .Infobox {
+    font-size: 1.2vh;
+  }
+  .Infobox2 {
+    font-size: 1.2vh;
+  }
+  .ImgInfoFlex {
+    gap: 50px;
+  }
+  .InfoFlex {
+    gap: 10px;
+  }
+  .ProfileBox {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .MyDIaryStateContianer {
+    margin-top: 10%;
+    width: 70vw;
+    height: 35vh;
+  }
+  .Titlebox2 {
+    width: 70vw;
+    height: 7vh;
+    font-weight: 400;
+    font-size: 2.5vw;
+  }
+  .RecentActivityBox {
+    margin-top: 9%;
+    font-size: 1rem;
+    gap: 50px;
+  }
+  .DiaryImg {
+    width: 10vw;
+  }
+}
 
 @media (max-width: 400px) {
   .InfoContainer {
@@ -378,10 +478,110 @@ body {
     height: 27vh;
   }
   .Infobox {
-    font-size: 1.4vh;
+    font-size: 1.3vh;
   }
   .Infobox2 {
-    font-size: 1.4vh;
+    font-size: 1.3vh;
+  }
+  .ImgInfoFlex {
+    gap: 50px;
+  }
+  .InfoFlex {
+    gap: 10px;
+  }
+  .ProfileBox {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .MyDIaryStateContianer {
+    margin-top: 10%;
+    width: 75vw;
+    height: 35vh;
+  }
+  .Titlebox2 {
+    width: 75vw;
+    height: 7vh;
+    font-weight: 600;
+    font-size: 2.8vw;
+  }
+  .RecentActivityBox {
+    margin-top: 9%;
+    font-size: 1rem;
+    gap: 30px;
+  }
+  .DiaryImg {
+    width: 10vw;
+  }
+}
+@media (max-width: 410px) {
+  .InfoContainer {
+    margin-top: 10%;
+  }
+  .Titlebox {
+    width: 75vw;
+    height: 7vh;
+    font-weight: 600;
+    font-size: 2.8vw;
+  }
+  .MySecurityBox {
+    width: 75vw;
+    height: 27vh;
+  }
+  .Infobox {
+    font-size: 1.3vh;
+  }
+  .Infobox2 {
+    font-size: 1.3vh;
+  }
+  .ImgInfoFlex {
+    gap: 50px;
+  }
+  .InfoFlex {
+    gap: 10px;
+  }
+  .ProfileBox {
+    width: 4.5rem;
+    height: 4.5rem;
+  }
+  .MyDIaryStateContianer {
+    margin-top: 10%;
+    width: 75vw;
+    height: 35vh;
+  }
+  .Titlebox2 {
+    width: 75vw;
+    height: 7vh;
+    font-weight: 600;
+    font-size: 2.8vw;
+  }
+  .RecentActivityBox {
+    margin-top: 9%;
+    font-size: 1rem;
+    gap: 30px;
+  }
+  .DiaryImg {
+    width: 10vw;
+  }
+}
+@media (max-width: 375px) {
+  .InfoContainer {
+    margin-top: 10%;
+  }
+  .Titlebox {
+    width: 75vw;
+    height: 7vh;
+    font-weight: 600;
+    font-size: 2.8vw;
+  }
+  .MySecurityBox {
+    width: 75vw;
+    height: 27vh;
+  }
+  .Infobox {
+    font-size: 1.2vh;
+  }
+  .Infobox2 {
+    font-size: 1.2vh;
   }
   .ImgInfoFlex {
     gap: 50px;

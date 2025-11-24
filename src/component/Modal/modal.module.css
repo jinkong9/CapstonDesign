@@ -198,6 +198,95 @@
   }
 }
 
+@media (max-width: 450px) {
+  .FormCotainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 1%;
+    background-color: #fafafa;
+    width: 77vw;
+    height: 76vh;
+  }
+
+  .InputTtitle {
+    width: 35vw;
+    height: 7vh;
+    font-size: 2.6vh;
+  }
+  .InputText {
+    margin-top: 2%;
+    height: 40vh;
+    font-size: 1.7vh;
+  }
+  .DayBox {
+    font-size: 14px;
+  }
+  .NameBox {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 430px) {
+  .FormCotainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 1%;
+    background-color: #fafafa;
+    width: 77vw;
+    height: 76vh;
+  }
+
+  .InputTtitle {
+    width: 35vw;
+    height: 7vh;
+    font-size: 2.6vh;
+  }
+  .InputText {
+    margin-top: 2%;
+    height: 40vh;
+    font-size: 1.7vh;
+  }
+  .DayBox {
+    font-size: 14px;
+  }
+  .NameBox {
+    font-size: 15px;
+  }
+}
+@media (max-width: 410px) {
+  .FormCotainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 1%;
+    background-color: #fafafa;
+    width: 77vw;
+    height: 70vh;
+  }
+
+  .InputTtitle {
+    width: 40 vw;
+    height: 7vh;
+    font-size: 2.5vh;
+  }
+  .InputText {
+    margin-top: 2%;
+    height: 40vh;
+    font-size: 1.7vh;
+  }
+  .DayBox {
+    font-size: 14px;
+  }
+  .NameBox {
+    font-size: 15px;
+  }
+}
+
 @media (max-width: 400px) {
   .FormCotainer {
     display: flex;
@@ -222,6 +311,36 @@
   }
   .DayBox {
     font-size: 14px;
+  }
+  .NameBox {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 375px) {
+  .FormCotainer {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+
+    margin-top: 1%;
+    background-color: #fafafa;
+    width: 77vw;
+    height: 70vh;
+  }
+
+  .InputTtitle {
+    width: 40 vw;
+    height: 7vh;
+    font-size: 2.5vh;
+  }
+  .InputText {
+    margin-top: 2%;
+    height: 40vh;
+    font-size: 1.7vh;
+  }
+  .DayBox {
+    font-size: 13px;
   }
   .NameBox {
     font-size: 15px;

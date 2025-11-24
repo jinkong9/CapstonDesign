@@ -130,6 +130,16 @@
     font-size: 26px;
     font-family: "Pretendard", sans-serif;
   }
+}
+
+@media (max-width: 430px) {
+  .headertext {
+    margin-top: -10%;
+    margin-bottom: 10%;
+    padding-bottom: 1em;
+    font-size: 26px;
+    font-family: "Pretendard", sans-serif;
+  }
 
   .inputbox {
     width: 18em;
@@ -143,7 +153,50 @@
     font-family: "Pretendard", sans-serif;
   }
 }
+@media (max-width: 410px) {
+  .headertext {
+    margin-top: -10%;
+    margin-bottom: 14%;
+    padding-bottom: 1em;
+    font-size: 25px;
+    font-family: "Pretendard", sans-serif;
+  }
+
+  .inputbox {
+    width: 17em;
+    height: 6vh;
+    padding: 10px;
+    margin-bottom: 1em;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: "Pretendard", sans-serif;
+  }
+}
 @media (max-width: 400px) {
+  .headertext {
+    margin-top: -10%;
+    margin-bottom: 14%;
+    padding-bottom: 1em;
+    font-size: 25px;
+    font-family: "Pretendard", sans-serif;
+  }
+
+  .inputbox {
+    width: 17em;
+    height: 6vh;
+    padding: 10px;
+    margin-bottom: 1em;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 50px;
+    font-size: 16px;
+    font-family: "Pretendard", sans-serif;
+  }
+}
+
+@media (max-width: 375px) {
   .headertext {
     margin-top: -10%;
     margin-bottom: 14%;

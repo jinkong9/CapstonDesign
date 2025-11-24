@@ -310,6 +310,146 @@ body {
     font-size: 2vh;
   }
 }
+@media (max-width: 450px) {
+  .RandomBox {
+    width: 60vw;
+    height: 6vh;
+    font-size: 0.5em;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  .FormCotainer {
+    margin-top: 5%;
+    width: 80vw;
+    height: 65vh;
+  }
+  /* 일기 주제 적는곳 */
+  .InputTtitle {
+    margin-top: 2%;
+    width: 40vw;
+    height: 5vh;
+    font-size: 1em;
+  }
+  .MyInfoBox {
+    font-size: 0.7em;
+  }
+  /* 선 */
+  .Line {
+    margin-top: 1%;
+    width: 80%;
+    height: 1px;
+  }
+  /* 일기 본문 */
+  .InputText {
+    margin-top: 2%;
+    height: 40vh;
+    font-size: 1.5vh;
+  }
+  /* 제출버튼 */
+  .SubmitButton {
+    margin-top: 4%;
+    width: 28%;
+
+    font-size: 0.9em;
+  }
+  /* 자유주제 클릭 */
+  .Checkbox {
+    font-size: 1.9vh;
+  }
+}
+
+@media (max-width: 430px) {
+  .RandomBox {
+    width: 60vw;
+    height: 6vh;
+    font-size: 0.5em;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  .FormCotainer {
+    margin-top: 5%;
+    width: 80vw;
+    height: 65vh;
+  }
+  /* 일기 주제 적는곳 */
+  .InputTtitle {
+    margin-top: 2%;
+    width: 40vw;
+    height: 5vh;
+    font-size: 1em;
+  }
+  .MyInfoBox {
+    font-size: 0.7em;
+  }
+  /* 선 */
+  .Line {
+    margin-top: 1%;
+    width: 80%;
+    height: 1px;
+  }
+  /* 일기 본문 */
+  .InputText {
+    margin-top: 2%;
+    height: 40vh;
+    font-size: 1.5vh;
+  }
+  /* 제출버튼 */
+  .SubmitButton {
+    margin-top: 4%;
+    width: 28%;
+
+    font-size: 0.9em;
+  }
+  /* 자유주제 클릭 */
+  .Checkbox {
+    font-size: 1.9vh;
+  }
+}
+@media (max-width: 410px) {
+  .RandomBox {
+    width: 60vw;
+    height: 6vh;
+    font-size: 0.5em;
+    margin-bottom: 5%;
+    margin-top: 5%;
+  }
+  .FormCotainer {
+    margin-top: 5%;
+    width: 80vw;
+    height: 65vh;
+  }
+  /* 일기 주제 적는곳 */
+  .InputTtitle {
+    margin-top: 2%;
+    width: 40vw;
+    height: 5vh;
+    font-size: 0.8em;
+  }
+  .MyInfoBox {
+    font-size: 0.8em;
+  }
+  /* 선 */
+  .Line {
+    margin-top: 1%;
+    width: 80%;
+    height: 1px;
+  }
+  /* 일기 본문 */
+  .InputText {
+    margin-top: 2%;
+    height: 40vh;
+    font-size: 1.7vh;
+  }
+  /* 제출버튼 */
+  .SubmitButton {
+    margin-top: 4%;
+    width: 29%;
+  }
+  /* 자유주제 클릭 */
+  .Checkbox {
+    font-size: 1.9vh;
+  }
+}
 
 @media (max-width: 400px) {
   .RandomBox {
@@ -353,6 +493,6 @@ body {
   }
   /* 자유주제 클릭 */
   .Checkbox {
-    font-size: 2vh;
+    font-size: 1.9vh;
   }
 }

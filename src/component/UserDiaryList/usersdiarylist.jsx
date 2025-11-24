@@ -18,7 +18,7 @@ function UsersDiaryList() {
   const [sortState, setSortState] = useState("new");
 
   const filterDiaryList = [...diaryList].filter((diary) =>
-    diary.title.includes(searchKeyword),
+    diary.title.includes(searchKeyword)
   );
   const sortDiaryList = [...filterDiaryList].sort((a, b) => {
     const dateA = new Date(a.created_at);

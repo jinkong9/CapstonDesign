@@ -150,6 +150,54 @@
     transition: all 0.3s ease-in-out;
   }
 }
+
+@media (max-width: 430px) {
+  .joinwrite {
+    font-size: 30px; /* 조금 줄이기 */
+    padding-bottom: 0.5em;
+  }
+  /* 회원가입 요소 박스 */
+  .joincon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 22em; /* 줄여서 화면에 맞춤 */
+    height: 4em;
+    margin-bottom: 0.8em;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 0.9em;
+    padding-left: 12px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+  }
+}
+@media (max-width: 410px) {
+  .joinwrite {
+    font-size: 30px; /* 조금 줄이기 */
+    padding-bottom: 1em;
+  }
+  /* 회원가입 요소 박스 */
+  .joincon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 20em; /* 줄여서 화면에 맞춤 */
+    height: 4em;
+    margin-bottom: 0.8em;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 0.9em;
+    padding-left: 12px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+  }
+}
+
 @media (max-width: 400px) {
   .joinwrite {
     font-size: 30px; /* 조금 줄이기 */
@@ -171,5 +219,36 @@
     padding-left: 12px;
     text-align: left;
     transition: all 0.3s ease-in-out;
+  }
+}
+
+@media (max-width: 375px) {
+  .joinwrite {
+    font-size: 30px; /* 조금 줄이기 */
+    padding-bottom: 1em;
+  }
+  /* 회원가입 요소 박스 */
+  .joincon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 19em; /* 줄여서 화면에 맞춤 */
+    height: 4em;
+    margin-bottom: 0.8em;
+    background-color: #f2f2f2;
+    border: 1px solid black;
+    border-radius: 25px;
+    font-size: 0.9em;
+    padding-left: 12px;
+    text-align: left;
+    transition: all 0.3s ease-in-out;
+  }
+  .agreementHeader {
+    font-size: 14px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
   }
 }
