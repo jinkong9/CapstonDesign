@@ -179,9 +179,9 @@
   }
 
   .DateText {
-    margin-left: 19%;
+    margin-left: 18%;
     margin-bottom: 2.2%;
-    font-size: 2vh;
+    font-size: 1.5vh;
   }
   .Line {
     margin-top: 1%;
@@ -248,9 +248,9 @@
   }
 
   .DateText {
-    margin-left: 25%;
+    margin-left: 24%;
     margin-bottom: 4%;
-    font-size: 2vh;
+    font-size: 1.5vh;
   }
   .Line {
     margin-top: 0%;
@@ -277,7 +277,7 @@
 
 @media (max-width: 640px) {
   .SortButton {
-    width: 8vw;
+    width: 9vw;
   }
   .DailyListWrapper {
     row-gap: 10px;
@@ -313,7 +313,7 @@
   .SortButton {
     width: 12vw;
     height: 3.8vh;
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   .DailyListWrapper {
     grid-template-columns: repeat(1, 1fr);
@@ -345,7 +345,76 @@
   .DateText {
     margin-left: 50%;
     margin-bottom: 10%;
+    font-size: 1.7vh;
+  }
+  .Line {
+    margin-top: -5%;
+    margin-left: 5%;
+    width: 88%;
+    height: 1.5px;
+  }
+  .ButtonContainer {
+    margin-top: 50%;
+    gap: 75px;
+  }
+  .DeleteButton {
+    width: 12vw;
+    height: 4vh;
+    font-size: 0.65rem;
+  }
+  .EditButton {
+    width: 12vw;
+    height: 4vh;
+    font-size: 0.65rem;
+  }
+}
+@media (max-width: 451px) {
+  .MainTitle {
+    font-size: 1.2em;
+  }
+  .gap {
+    gap: 25px;
+  }
+  .color {
+    height: 180vh;
+  }
+
+  .SortButton {
+    width: 14vw;
+    height: 3.8vh;
+    font-size: 0.8em;
+  }
+  .DailyListWrapper {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+    height: auto;
+    height: 80%;
+  }
+  .DaliyBox {
+    margin-top: 5%;
+    width: 70vw;
+    height: 30vh;
+  }
+  .DaliyTitleText {
+    margin-top: -20.5%;
+  }
+  .DaliyTitle2Text {
+    margin-top: -10%;
+    font-size: 2.5vh;
+    font-weight: 600;
+  }
+
+  .DaliyContentText {
+    position: absolute;
+    margin-top: 6%;
+    text-align: center;
     font-size: 2vh;
+  }
+
+  .DateText {
+    margin-left: 50%;
+    margin-bottom: 10%;
+    font-size: 1.7vh;
   }
   .Line {
     margin-top: -5%;
@@ -369,11 +438,21 @@
   }
 }
 
-@media (max-width: 376px) {
+@media (max-width: 431px) {
+  .MainTitle {
+    font-size: 1.2em;
+  }
+  .gap {
+    gap: 25px;
+  }
+  .color {
+    height: 180vh;
+  }
+
   .SortButton {
-    width: 16vw;
+    width: 14vw;
     height: 3.8vh;
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   .DailyListWrapper {
     grid-template-columns: repeat(1, 1fr);
@@ -405,7 +484,7 @@
   .DateText {
     margin-left: 50%;
     margin-bottom: 10%;
-    font-size: 2vh;
+    font-size: 1.7vh;
   }
   .Line {
     margin-top: -5%;
@@ -414,17 +493,156 @@
     height: 1.5px;
   }
   .ButtonContainer {
-    margin-top: 60%;
+    margin-top: 50%;
     gap: 75px;
   }
   .DeleteButton {
-    width: 15vw;
+    width: 12vw;
     height: 4vh;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
   }
   .EditButton {
-    width: 15vw;
+    width: 12vw;
     height: 4vh;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
+  }
+}
+@media (max-width: 411px) {
+  .MainTitle {
+    font-size: 1.2em;
+  }
+  .gap {
+    gap: 25px;
+  }
+  .color {
+    height: 180vh;
+  }
+
+  .SortButton {
+    width: 14vw;
+    height: 3.8vh;
+    font-size: 0.8em;
+  }
+  .DailyListWrapper {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+    height: auto;
+    height: 80%;
+  }
+  .DaliyBox {
+    margin-top: 5%;
+    width: 70vw;
+    height: 30vh;
+  }
+  .DaliyTitleText {
+    margin-top: -20.5%;
+  }
+  .DaliyTitle2Text {
+    margin-top: -10%;
+    font-size: 2.5vh;
+    font-weight: 600;
+  }
+
+  .DaliyContentText {
+    position: absolute;
+    margin-top: 6%;
+    text-align: center;
+    font-size: 2vh;
+  }
+
+  .DateText {
+    margin-left: 50%;
+    margin-bottom: 10%;
+    font-size: 1.6vh;
+  }
+  .Line {
+    margin-top: -5%;
+    margin-left: 5%;
+    width: 88%;
+    height: 1.5px;
+  }
+  .ButtonContainer {
+    margin-top: 50%;
+    gap: 75px;
+  }
+  .DeleteButton {
+    width: 12vw;
+    height: 4vh;
+    font-size: 0.65rem;
+  }
+  .EditButton {
+    width: 12vw;
+    height: 4vh;
+    font-size: 0.65rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .MainTitle {
+    font-size: 1.2em;
+  }
+  .gap {
+    gap: 25px;
+  }
+  .color {
+    height: 180vh;
+  }
+
+  .SortButton {
+    width: 14vw;
+    height: 3.8vh;
+    font-size: 0.8em;
+  }
+  .DailyListWrapper {
+    grid-template-columns: repeat(1, 1fr);
+    row-gap: 50px;
+    height: auto;
+    height: 80%;
+  }
+  .DaliyBox {
+    margin-top: 5%;
+    width: 70vw;
+    height: 30vh;
+  }
+  .DaliyTitleText {
+    margin-top: -20.5%;
+  }
+  .DaliyTitle2Text {
+    margin-top: -10%;
+    font-size: 2.5vh;
+    font-weight: 600;
+  }
+
+  .DaliyContentText {
+    position: absolute;
+    margin-top: 6%;
+    text-align: center;
+    font-size: 2vh;
+  }
+
+  .DateText {
+    margin-left: 48%;
+    margin-bottom: 10%;
+    font-size: 1.6vh;
+  }
+  .Line {
+    margin-top: -5%;
+    margin-left: 5%;
+    width: 88%;
+    height: 1.5px;
+  }
+  .ButtonContainer {
+    margin-top: 50%;
+    gap: 75px;
+  }
+  .DeleteButton {
+    width: 12vw;
+    height: 4vh;
+    font-size: 0.65rem;
+  }
+  .EditButton {
+    width: 12vw;
+    height: 4vh;
+    font-size: 0.65rem;
   }
 }

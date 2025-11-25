@@ -36,7 +36,7 @@ function Writediary() {
           title: inputData.title,
           content: inputData.content,
         },
-        { withCredentials: true },
+        { withCredentials: true }
       );
       console.log("일기 수정 성공:", response.data);
       alert("제출 완료 ");
@@ -55,10 +55,7 @@ function Writediary() {
 
   return (
     <div className={styles.BodyContainer}>
-      <form
-        onSubmit={(e) => handleSubmit(e, diary.id)}
-        className={styles.FormCotainer}
-      >
+      <form className={styles.FormCotainer}>
         <input
           className={styles.InputTtitle}
           name="title"
@@ -83,10 +80,15 @@ function Writediary() {
           onChange={handleChange}
         />
         <br />
-        <button className={styles.SubmitButton} type="submit">
-          수정하기ss
-        </button>
       </form>
+      <div className={styles.btnbox}>
+        <button
+          className={styles.SubmitButton}
+          onClick={(e) => handleSubmit(e, diary.id)}
+        >
+          수정하기
+        </button>
+      </div>
     </div>
   );
 }

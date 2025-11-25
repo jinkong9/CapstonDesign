@@ -53,7 +53,7 @@ function Previous() {
                   </p>
                   <span className={styles.DaliyTitle2Text}>
                     {diary.title.length > 10
-                      ? diary.title.substring(0, 10) + "..."
+                      ? diary.title.substring(0, 8) + "..."
                       : diary.title}
                   </span>
                   <span className={styles.DateText}>
@@ -67,7 +67,6 @@ function Previous() {
                       ? diary.content.substring(0, 10) + "..."
                       : diary.content}
                   </div>
-                 
                 </div>
               ))}
             </div>

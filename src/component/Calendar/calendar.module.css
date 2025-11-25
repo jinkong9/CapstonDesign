@@ -424,45 +424,129 @@ body {
 
 @media (max-width: 480px) {
   .container {
+    height: auto;
+    min-height: 80vh;
     width: 98%;
-    padding: 5px;
+    padding: 10px 5px;
+  }
+  .headerText {
+    font-size: 3vw;
+  }
+  .headerText2 {
+    font-size: 3vw;
   }
   .header {
     font-size: 1.4rem;
     margin-bottom: 1em;
   }
+
   .weekDay {
-    font-size: 0.75rem;
-    margin-bottom: 0.8em;
+    font-size: 0.8rem;
+    margin-bottom: 0.5em;
   }
+
   .daysGrid {
-    gap: 2px;
-    padding: 0.8em;
+    flex: none;
+    height: auto;
+    aspect-ratio: 1 / 1.1;
+    gap: 4px;
+    padding: 0.5em;
   }
+
   .dayBox {
-    padding: 4px 0;
-    font-size: 0.7rem;
+    padding: 0;
+    font-size: 0.8rem;
     border-radius: 4px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .check {
+    font-size: 1em;
+    margin-top: 0;
+  }
+
+  .extratext {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 20px;
+    font-size: 0.9rem;
   }
 }
 
-@media (max-width: 360px) {
+@media (max-width: 451px) {
+  .header {
+    font-size: 1.35rem;
+  }
+  .weekDay {
+    font-size: 0.85rem;
+  }
+  .daysGrid {
+    gap: 3px;
+    padding: 8px;
+  }
+  .dayBox {
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 431px) {
+  .header {
+    font-size: 1.3rem;
+  }
+  .daysGrid {
+    aspect-ratio: 1 / 1.05;
+  }
+}
+
+@media (max-width: 411px) {
+  .headerText {
+    margin-top: 15%;
+  }
+  .montnBtn {
+    padding: 8px;
+  }
+  .weekDay {
+    font-size: 0.8rem;
+  }
+  .daysGrid {
+    gap: 2px;
+    padding: 5px;
+  }
+  .dayBox {
+    font-size: 0.8rem;
+  }
+}
+
+/* 5. 400px 이하 (작은 화면) - 가장 타이트한 설정 */
+@media (max-width: 400px) {
+  .container {
+    padding: 5px 2px;
+  }
   .header {
     font-size: 1.2rem;
   }
-  .montnBtn {
-    padding: 0.4em 0.8em;
+  .headerText {
+    font-size: 1.2rem;
   }
-  .weekDay {
-    font-size: 0.7rem;
+  .headerText2 {
+    font-size: 0.8rem;
   }
+
+  /* 달력 그리드 간격 최소화 */
   .daysGrid {
-    gap: 1px;
-    padding: 0.3em;
-    border-radius: 10px;
+    gap: 2px;
+    padding: 4px;
+    border-radius: 12px;
+    aspect-ratio: 1 / 1; /* 완전 정사각형 비율 */
   }
+
   .dayBox {
-    padding: 3px 0;
-    font-size: 0.7rem;
+    border-radius: 4px;
+    font-size: 0.75rem;
+  }
+
+  .check {
+    font-size: 0.8em;
   }
 }

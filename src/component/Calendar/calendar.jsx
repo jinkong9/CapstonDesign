@@ -6,7 +6,6 @@ import weekOfYear from "dayjs/plugin/weekOfYear";
 import "dayjs/locale/ko";
 import styles from "./calendar.module.css";
 import { Link, useNavigate } from "react-router-dom";
-import Nav from "../Nav/nav";
 import api from "../CreatContextAPI/api";
 
 dayjs.extend(weekday);
@@ -21,7 +20,7 @@ export default function Mycalendar() {
 
   const weekDays = useMemo(
     () => ["일", "월", "화", "수", "목", "금", "토"],
-    [],
+    []
   );
 
   const startWeek = viewDate.startOf("month").week();
@@ -104,7 +103,7 @@ export default function Mycalendar() {
         <div className={styles.daysGrid}>
           {Array.from(
             { length: endWeek - startWeek + 1 },
-            (_, index) => startWeek + index,
+            (_, index) => startWeek + index
           ).map((week) =>
             Array(7)
               .fill(0)
@@ -144,7 +143,7 @@ export default function Mycalendar() {
                     )}
                   </div>
                 );
-              }),
+              })
           )}
         </div>
       </div>
