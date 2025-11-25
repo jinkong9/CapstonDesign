@@ -84,7 +84,7 @@ function Writediary() {
         />
         <br />
         <button className={styles.SubmitButton} type="submit">
-          수정하기
+          수정하기ss
         </button>
       </form>
     </div>
