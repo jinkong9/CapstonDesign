@@ -1,18 +1,23 @@
 .MainContainer {
   justify-content: center;
   display: flex;
-  height: 100vh;
   width: 100vw;
   background-color: #f5e7d2;
   position: absolute;
   margin-top: 15%;
-  min-height: 200vh;
 }
 .MainTitle {
   position: absolute;
   margin-top: -9%;
-
   font-size: 1.8em;
+}
+.color {
+  width: 100vw;
+  height: 100%;
+  background-color: #f5e7d2;
+  display: flex;
+  flex-wrap: wrap;
+  padding-bottom: 5%;
 }
 .DaliyBox {
   display: flex;
@@ -44,12 +49,7 @@
 .DaliyContentText {
   position: absolute;
   margin-top: 2%;
-  margin-right: 12%;
   font-size: 2vh;
-}
-
-body {
-  height: 100vh;
 }
 
 .DailyListWrapper {
@@ -151,12 +151,10 @@ body {
   .MainContainer {
     justify-content: center;
     display: flex;
-    height: 100vh;
     width: 100vw;
     background-color: #f5e7d2;
     position: absolute;
     margin-top: 21%;
-    min-height: 200vh;
   }
 }
 
@@ -238,12 +236,10 @@ body {
   .MainContainer {
     justify-content: center;
     display: flex;
-    height: 100vh;
     width: 100vw;
     background-color: #f5e7d2;
     position: absolute;
     margin-top: 21%;
-    min-height: 200vh;
   }
 }
 
@@ -416,12 +412,10 @@ body {
   .MainContainer {
     justify-content: center;
     display: flex;
-    height: 100vh;
     width: 100vw;
     background-color: #f5e7d2;
     position: absolute;
     margin-top: 21%;
-    min-height: 200vh;
   }
 }
 
@@ -485,7 +479,6 @@ body {
     margin-left: 5%;
     width: 88%;
     height: 1px;
-    background-color: black;
   }
   .ButtonContainer {
     margin-top: 28%;
@@ -511,12 +504,10 @@ body {
   .MainContainer {
     justify-content: center;
     display: flex;
-    height: 100vh;
     width: 100vw;
     background-color: #f5e7d2;
     position: absolute;
     margin-top: 21%;
-    min-height: 200vh;
   }
 }
 @media (max-width: 451px) {
@@ -605,12 +596,10 @@ body {
   .MainContainer {
     justify-content: center;
     display: flex;
-    height: 100vh;
     width: 100vw;
     background-color: #f5e7d2;
     position: absolute;
     margin-top: 21%;
-    min-height: 200vh;
   }
 }
 
@@ -700,12 +689,10 @@ body {
   .MainContainer {
     justify-content: center;
     display: flex;
-    height: 100vh;
     width: 100vw;
     background-color: #f5e7d2;
     position: absolute;
     margin-top: 21%;
-    min-height: 200vh;
   }
 }
 
@@ -794,12 +781,10 @@ body {
   .MainContainer {
     justify-content: center;
     display: flex;
-    height: 100vh;
     width: 100vw;
     background-color: #f5e7d2;
     position: absolute;
     margin-top: 20%;
-    min-height: 200vh;
   }
 }
 
@@ -888,12 +873,10 @@ body {
   .MainContainer {
     justify-content: center;
     display: flex;
-    height: 100vh;
     width: 100vw;
     background-color: #f5e7d2;
     position: absolute;
     margin-top: 20%;
-    min-height: 200vh;
   }
 }
 @media (max-width: 375px) {
@@ -981,11 +964,9 @@ body {
   .MainContainer {
     justify-content: center;
     display: flex;
-    height: 100vh;
     width: 100vw;
     background-color: #f5e7d2;
     position: absolute;
     margin-top: 20%;
-    min-height: 200vh;
   }
 }

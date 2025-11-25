@@ -49,7 +49,7 @@ function Main() {
         const response = await api.get("/diaries/recent");
         setDiaryList(response.data.diaries);
         const avatars = response.data.diaries.map(
-          (diary) => diary.author.avatar,
+          (diary) => diary.author.avatar
         );
         setUserAvatar(avatars);
         setQuarter;
@@ -64,7 +64,7 @@ function Main() {
     const responseData = async () => {
       try {
         await Promise.all(
-          diaryList.map((diary) => api.get(`/avatars/${diary.author.avatar}`)),
+          diaryList.map((diary) => api.get(`/avatars/${diary.author.avatar}`))
         );
       } catch (error) {
         console.log("avatar없음");
@@ -163,8 +163,8 @@ function Main() {
                     })}
                   </span>
                   <span className={styles.DaliyTitle2Text}>
-                    {diary.title.length > 10
-                      ? diary.title.substring(0, 10) + "..."
+                    {diary.title.length > 8
+                      ? diary.title.substring(0, 8) + "..."
                       : diary.title}
                   </span>
                 </div>

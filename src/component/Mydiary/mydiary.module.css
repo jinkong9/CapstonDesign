@@ -25,6 +25,7 @@
   background-color: #f5e7d2;
   display: flex;
   flex-wrap: wrap;
+  padding-bottom: 5%;
 }
 .gap {
   display: flex;
@@ -142,7 +143,7 @@
 }
 @media (max-width: 1280px) {
   .ButtonContainer {
-    margin-top: 20%;
+    margin-top: 25%;
   }
   .DeleteButton {
     width: 6vw;
@@ -376,7 +377,7 @@
   }
   .DaliyTitle2Text {
     margin-top: -10%;
-    font-size: 2.5vh;
+    font-size: 2vh;
     font-weight: 600;
   }
 
@@ -390,7 +391,7 @@
   .DateText {
     margin-left: 50%;
     margin-bottom: 10%;
-    font-size: 2vh;
+    font-size: 1.5vh;
   }
   .Line {
     margin-top: -5%;
@@ -399,7 +400,7 @@
     height: 1.5px;
   }
   .ButtonContainer {
-    margin-top: 50%;
+    margin-top: 65%;
     gap: 75px;
   }
   .DeleteButton {
@@ -429,7 +430,7 @@
 
 @media (max-width: 431px) {
   .ButtonContainer {
-    margin-top: 55%;
+    margin-top: 70%;
   }
   .DeleteButton {
     width: 14vw;
@@ -444,64 +445,17 @@
 }
 
 @media (max-width: 400px) {
-  .color {
-    height: auto !important;
-  }
-  .SortButton {
-    width: 16vw;
-    height: 3.8vh;
-    font-size: 0.7em;
-  }
-  .DailyListWrapper {
-    grid-template-columns: repeat(1, 1fr);
-    row-gap: 50px;
-    height: auto;
-    height: 100%;
-  }
-  .DaliyBox {
-    margin-top: 5%;
-    width: 70vw;
-    height: 30vh;
-  }
-  .DaliyTitleText {
-    margin-top: -20.5%;
-  }
-  .DaliyTitle2Text {
-    margin-top: -10%;
-    font-size: 2.5vh;
-    font-weight: 600;
-  }
-
-  .DaliyContentText {
-    position: absolute;
-    margin-top: 6%;
-    text-align: center;
-    font-size: 2vh;
-  }
-
-  .DateText {
-    margin-left: 50%;
-    margin-bottom: 10%;
-    font-size: 2vh;
-  }
-  .Line {
-    margin-top: -5%;
-    margin-left: 5%;
-    width: 88%;
-    height: 1.5px;
-  }
   .ButtonContainer {
-    margin-top: 60%;
-    gap: 75px;
+    margin-top: 75%;
   }
   .DeleteButton {
-    width: 15vw;
+    width: 14vw;
     height: 4vh;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
   }
   .EditButton {
-    width: 15vw;
+    width: 14vw;
     height: 4vh;
-    font-size: 0.6rem;
+    font-size: 0.65rem;
   }
 }

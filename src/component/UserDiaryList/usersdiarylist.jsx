@@ -51,44 +51,45 @@ function UsersDiaryList() {
           onChange={(e) => SetSearchKeyword(e.target.value)}
           className={styles.TitleInputBox}
         />
+        <div className={styles.color}>
+          <div
+            className={styles.SortButton}
+            onClick={() =>
+              sortState === "new" ? setSortState("old") : setSortState("new")
+            }
+          >
+            {sortState === "new" ? "최신 순" : "오래된 순"}
+          </div>
 
-        <div
-          className={styles.SortButton}
-          onClick={() =>
-            sortState === "new" ? setSortState("old") : setSortState("new")
-          }
-        >
-          {sortState === "new" ? "최신 순" : "오래된 순"}
-        </div>
-
-        <div className={styles.DailyListWrapper}>
-          {sortDiaryList.map((diary, index) => (
-            <div
-              key={index}
-              className={styles.DaliyBox}
-              onClick={() => SetModalState(diary)}
-            >
-              <p className={styles.DaliyTitleText}>
-                {diary.author.full_name}님의 일기
-              </p>
-              <span className={styles.DaliyTitle2Text}>
-                {diary.title.length > 10
-                  ? diary.title.substring(0, 10) + "..."
-                  : diary.title}
-              </span>
-              <span className={styles.DateText}>
-                {new Date(diary.created_at).toLocaleDateString("ko-KR", {
-                  timeZone: "Asia/Seoul",
-                })}
-              </span>
-              <div className={styles.Line}></div>
-              <div className={styles.DaliyContentText}>
-                {diary.content.length > 10
-                  ? diary.content.substring(0, 10) + "..."
-                  : diary.content}
+          <div className={styles.DailyListWrapper}>
+            {sortDiaryList.map((diary, index) => (
+              <div
+                key={index}
+                className={styles.DaliyBox}
+                onClick={() => SetModalState(diary)}
+              >
+                <p className={styles.DaliyTitleText}>
+                  {diary.author.full_name}님의 일기
+                </p>
+                <span className={styles.DaliyTitle2Text}>
+                  {diary.title.length > 10
+                    ? diary.title.substring(0, 10) + "..."
+                    : diary.title}
+                </span>
+                <span className={styles.DateText}>
+                  {new Date(diary.created_at).toLocaleDateString("ko-KR", {
+                    timeZone: "Asia/Seoul",
+                  })}
+                </span>
+                <div className={styles.Line}></div>
+                <div className={styles.DaliyContentText}>
+                  {diary.content.length > 10
+                    ? diary.content.substring(0, 10) + "..."
+                    : diary.content}
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </main>
       {modalState && <ModalPage />}
