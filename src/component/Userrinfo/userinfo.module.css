@@ -20,8 +20,8 @@
   justify-content: center;
   font-size: 1vw;
   height: 100%;
-  width: 30%;
-  gap: 8%;
+  width: 40%;
+  gap: 15px;
 }
 .LeftBoxFlex {
   display: flex;
@@ -76,7 +76,7 @@
 }
 /* 프로필 사진박스 */
 .ProfileBox {
-  width: 9vw;
+  width: 7vw;
   height: 17vh;
   background-color: white;
   border-radius: 50%;
@@ -106,9 +106,9 @@
 }
 /* 일기숨김 자리 */
 .MyDiaryContinaer {
-  margin-top: 5%;
   display: flex;
   flex-direction: row;
+  align-items: center;
   gap: 10%;
 }
 
@@ -139,7 +139,6 @@
 }
 
 .ProFileLink {
-  margin-bottom: 2%;
   color: black;
   cursor: pointer;
 }

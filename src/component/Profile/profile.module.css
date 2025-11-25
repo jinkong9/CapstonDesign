@@ -325,9 +325,9 @@ body {
 @media (max-width: 480px) {
   /* 전체박스 */
   .Mainbox {
-    width: 66vw;
-    height: 95vh;
-    margin-top: 2%;
+    width: 80vw;
+    height: 90vh;
+    margin-top: 5%;
   }
   /* 프로필변경 */
   .SubTitleBox {
@@ -345,12 +345,12 @@ body {
   }
   /* 아래 회색박스 전체 */
   .ProfileChangeBox {
-    width: 55vw;
-    height: 55vh;
+    width: 60vw;
+    height: 50vh;
   }
   /* 회색박스 헤더 */
   .ProfileChangetitleBox {
-    width: 55vw;
+    width: 60vw;
     height: 7vh;
   }
   /* 사진있는 박스 */
@@ -381,6 +381,162 @@ body {
   }
 }
 
+@media (max-width: 451px) {
+  .Mainbox {
+    width: 80vw;
+    height: 90vh;
+    margin-top: 5%;
+  }
+  /* 안쪽박스 */
+  .MyProfileBox {
+    margin-bottom: 3%;
+  }
+  /* 이미지 */
+  .MyProfile {
+    width: 18vw;
+    height: 15vh;
+  }
+  /* 아래 회색박스 전체 */
+  .ProfileChangeBox {
+    width: 60vw;
+    height: 50vh;
+  }
+  /* 회색박스 헤더 */
+  .ProfileChangetitleBox {
+    width: 60vw;
+    height: 7vh;
+  }
+  /* 사진있는 박스 */
+  .MyProfileCheckBox {
+    margin-top: 15%;
+    gap: 50px;
+  }
+  /* 사진있는 동그라미 */
+  .MyProfileWriteCircle {
+    width: 18vw;
+    height: 14vh;
+  }
+  .PreviewText {
+    font-size: 0.1em;
+    font-weight: 600;
+  }
+  .ProfileSubTitle {
+    font-size: 0.5em;
+  }
+  .CustomButton {
+    font-size: 0.5em;
+  }
+  /* 버튼 */
+  .ProfileSubmitButton {
+    font-size: 0.5em;
+    width: 14vw;
+    height: 5vh;
+  }
+}
+@media (max-width: 431px) {
+  .Mainbox {
+    width: 80vw;
+    height: 90vh;
+    margin-top: 5%;
+  }
+  /* 안쪽박스 */
+  .MyProfileBox {
+    margin-bottom: 3%;
+  }
+  /* 이미지 */
+  .MyProfile {
+    width: 18vw;
+    height: 15vh;
+  }
+  /* 아래 회색박스 전체 */
+  .ProfileChangeBox {
+    width: 60vw;
+    height: 50vh;
+  }
+  /* 회색박스 헤더 */
+  .ProfileChangetitleBox {
+    width: 60vw;
+    height: 7vh;
+  }
+  /* 사진있는 박스 */
+  .MyProfileCheckBox {
+    margin-top: 15%;
+    gap: 50px;
+  }
+  /* 사진있는 동그라미 */
+  .MyProfileWriteCircle {
+    width: 18vw;
+    height: 14vh;
+  }
+  .PreviewText {
+    font-size: 0.1em;
+    font-weight: 600;
+  }
+  .ProfileSubTitle {
+    font-size: 0.4em;
+  }
+  .CustomButton {
+    font-size: 0.4em;
+  }
+  /* 버튼 */
+  .ProfileSubmitButton {
+    font-size: 0.6em;
+    width: 16vw;
+    height: 5vh;
+  }
+}
+@media (max-width: 411px) {
+  .Mainbox {
+    width: 80vw;
+    height: 90vh;
+    margin-top: 5%;
+  }
+  /* 안쪽박스 */
+  .MyProfileBox {
+    margin-bottom: 3%;
+  }
+  /* 이미지 */
+  .MyProfile {
+    width: 18vw;
+    height: 15vh;
+  }
+  /* 아래 회색박스 전체 */
+  .ProfileChangeBox {
+    width: 60vw;
+    height: 50vh;
+  }
+  /* 회색박스 헤더 */
+  .ProfileChangetitleBox {
+    width: 60vw;
+    height: 7vh;
+  }
+  /* 사진있는 박스 */
+  .MyProfileCheckBox {
+    margin-top: 15%;
+    gap: 50px;
+  }
+  /* 사진있는 동그라미 */
+  .MyProfileWriteCircle {
+    width: 18vw;
+    height: 14vh;
+  }
+  .PreviewText {
+    font-size: 0.1em;
+    font-weight: 600;
+  }
+  .ProfileSubTitle {
+    font-size: 0.4em;
+  }
+  .CustomButton {
+    font-size: 0.4em;
+  }
+  /* 버튼 */
+  .ProfileSubmitButton {
+    font-size: 0.6em;
+    width: 16vw;
+    height: 5vh;
+  }
+}
 @media (max-width: 400px) {
   /* 전체박스 */
   .Mainbox {

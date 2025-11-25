@@ -80,7 +80,11 @@ function Writediary() {
         </div>
       )}
       <div className={styles.Checkbox}>
-        <input type="checkbox" onClick={checkClickEvent} />
+        <input
+          type="checkbox"
+          onClick={checkClickEvent}
+          className={styles.check}
+        />
         <label>자유 주제로 작성하기</label>
       </div>
       <form className={styles.formContain} onSubmit={handleSubmit}>

@@ -362,18 +362,18 @@ body {
     width: 10vw;
   }
 }
-@media (max-width: 450px) {
+@media (max-width: 451px) {
   .InfoContainer {
     margin-top: 8%;
   }
   .Titlebox {
-    width: 65vw;
+    width: 70vw;
     height: 7vh;
     font-weight: 400;
     font-size: 2.5vw;
   }
   .MySecurityBox {
-    width: 65vw;
+    width: 70vw;
     height: 27vh;
   }
   .Infobox {
@@ -412,7 +412,7 @@ body {
     width: 10vw;
   }
 }
-@media (max-width: 430px) {
+@media (max-width: 431px) {
   .InfoContainer {
     margin-top: 8%;
   }
