@@ -1,3 +1,5 @@
+@import "pretendard/dist/web/static/pretendard.css";
+
 body {
   height: 100vh;
 }
@@ -25,7 +27,6 @@ body {
 .formContain {
   display: flex;
   flex-direction: column;
-
   align-items: center;
 }
 /* 일기쓰는 컨테이너 */
@@ -47,6 +48,7 @@ body {
   background-color: #f2f2f2;
   border: none;
   font-size: 2.6vh;
+  font-family: "Pretendard", sans-serif;
 }
 /* 선 */
 .Line {
@@ -66,6 +68,7 @@ body {
   font-size: 2vh;
   resize: none;
   outline: none;
+  font-family: "Pretendard", sans-serif;
 }
 /* 랜덤주제 */
 .MyInfoBox {
@@ -87,6 +90,22 @@ body {
 /* 자유주제 클릭 */
 .Checkbox {
   margin-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+}
+
+.check {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+  transition: ease-in;
+}
+
+.check:hover {
+  transform: scale(1.05);
+  box-shadow: rgb(35, 16, 0);
 }
 
 @media (max-width: 1280px) {
@@ -268,70 +287,27 @@ body {
     width: 60vw;
     height: 6vh;
     font-size: 0.5em;
-    margin-bottom: 5%;
+    margin-bottom: 2%;
     margin-top: 5%;
   }
-  .FormCotainer {
-    margin-top: 5%;
-    width: 80vw;
-    height: 65vh;
-  }
-  /* 일기 주제 적는곳 */
-  .InputTtitle {
-    margin-top: 2%;
-    width: 40vw;
-    height: 5vh;
-    font-size: 0.8em;
-  }
-  .MyInfoBox {
-    font-size: 0.8em;
-  }
-  /* 선 */
-  .Line {
-    margin-top: 1%;
-    width: 80%;
-    height: 1px;
-  }
-  /* 일기 본문 */
-  .InputText {
-    margin-top: 2%;
-    height: 40vh;
-    font-size: 1.7vh;
-  }
-  /* 제출버튼 */
-  .SubmitButton {
-    margin-top: 4%;
-    width: 28%;
-
-    font-size: 0.9em;
-  }
-  /* 자유주제 클릭 */
   .Checkbox {
     font-size: 2vh;
+    padding: 1%;
   }
-}
-@media (max-width: 450px) {
-  .RandomBox {
-    width: 60vw;
-    height: 6vh;
-    font-size: 0.5em;
-    margin-bottom: 5%;
+  .textareaContain {
     margin-top: 5%;
-  }
-  .FormCotainer {
-    margin-top: 5%;
-    width: 80vw;
-    height: 65vh;
+    width: 70vw;
+    height: 70vh;
   }
   /* 일기 주제 적는곳 */
   .InputTtitle {
-    margin-top: 2%;
+    margin-top: 5%;
     width: 40vw;
     height: 5vh;
-    font-size: 1em;
+    font-size: 0.8em;
   }
   .MyInfoBox {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
   /* 선 */
   .Line {
@@ -343,156 +319,65 @@ body {
   .InputText {
     margin-top: 2%;
     height: 40vh;
-    font-size: 1.5vh;
+    font-size: 2vh;
   }
   /* 제출버튼 */
   .SubmitButton {
     margin-top: 4%;
     width: 28%;
-
-    font-size: 0.9em;
+    font-size: 0.8em;
   }
-  /* 자유주제 클릭 */
+}
+@media (max-width: 451px) {
   .Checkbox {
-    font-size: 1.9vh;
+    gap: 5px;
+  }
+  .check {
+    width: 0.9rem;
+    height: 0.9rem;
+  }
+  .textareaContain {
+    width: 75vw;
+  }
+  .MyInfoBox {
+    font-size: 0.8em;
+  }
+  .SubmitButton {
+    font-size: 0.85em;
   }
 }
 
-@media (max-width: 430px) {
-  .RandomBox {
-    width: 60vw;
-    height: 6vh;
-    font-size: 0.5em;
-    margin-bottom: 5%;
-    margin-top: 5%;
+@media (max-width: 431px) {
+  .Checkbox {
+    gap: 5px;
   }
-  .FormCotainer {
-    margin-top: 5%;
-    width: 80vw;
-    height: 65vh;
+  .check {
+    width: 0.9rem;
+    height: 0.9rem;
   }
-  /* 일기 주제 적는곳 */
-  .InputTtitle {
-    margin-top: 2%;
-    width: 40vw;
-    height: 5vh;
-    font-size: 1em;
+  .textareaContain {
+    width: 75vw;
   }
   .MyInfoBox {
-    font-size: 0.7em;
+    font-size: 0.8em;
   }
-  /* 선 */
-  .Line {
-    margin-top: 1%;
-    width: 80%;
-    height: 1px;
-  }
-  /* 일기 본문 */
-  .InputText {
-    margin-top: 2%;
-    height: 40vh;
-    font-size: 1.5vh;
-  }
-  /* 제출버튼 */
   .SubmitButton {
-    margin-top: 4%;
-    width: 28%;
-
-    font-size: 0.9em;
-  }
-  /* 자유주제 클릭 */
-  .Checkbox {
-    font-size: 1.9vh;
+    font-size: 0.85em;
   }
 }
 @media (max-width: 410px) {
-  .RandomBox {
-    width: 60vw;
-    height: 6vh;
-    font-size: 0.5em;
-    margin-bottom: 5%;
-    margin-top: 5%;
-  }
-  .FormCotainer {
-    margin-top: 5%;
-    width: 80vw;
-    height: 65vh;
-  }
-  /* 일기 주제 적는곳 */
-  .InputTtitle {
-    margin-top: 2%;
-    width: 40vw;
-    height: 5vh;
-    font-size: 0.8em;
-  }
-  .MyInfoBox {
-    font-size: 0.8em;
-  }
-  /* 선 */
-  .Line {
-    margin-top: 1%;
-    width: 80%;
-    height: 1px;
-  }
-  /* 일기 본문 */
-  .InputText {
-    margin-top: 2%;
-    height: 40vh;
-    font-size: 1.7vh;
-  }
-  /* 제출버튼 */
-  .SubmitButton {
-    margin-top: 4%;
-    width: 29%;
-  }
-  /* 자유주제 클릭 */
-  .Checkbox {
-    font-size: 1.9vh;
+  .textareaContain {
+    width: 75vw;
+    height: 68vh;
   }
 }
 
 @media (max-width: 400px) {
-  .RandomBox {
-    width: 60vw;
-    height: 6vh;
-    font-size: 0.5em;
-    margin-bottom: 5%;
-    margin-top: 5%;
+  .textareaContain {
+    width: 75vw;
+    height: 68vh;
   }
-  .FormCotainer {
-    margin-top: 5%;
-    width: 80vw;
-    height: 65vh;
-  }
-  /* 일기 주제 적는곳 */
-  .InputTtitle {
-    margin-top: 2%;
-    width: 40vw;
-    height: 5vh;
-    font-size: 0.8em;
-  }
-  .MyInfoBox {
-    font-size: 0.8em;
-  }
-  /* 선 */
-  .Line {
-    margin-top: 1%;
-    width: 80%;
-    height: 1px;
-  }
-  /* 일기 본문 */
-  .InputText {
-    margin-top: 2%;
-    height: 40vh;
-    font-size: 1.7vh;
-  }
-  /* 제출버튼 */
   .SubmitButton {
-    margin-top: 4%;
-    width: 29%;
-  }
-  /* 자유주제 클릭 */
-  .Checkbox {
-    font-size: 1.9vh;
+    margin-top: 6%;
   }
 }
