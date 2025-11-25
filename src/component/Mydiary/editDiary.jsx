@@ -36,7 +36,7 @@ function Writediary() {
           title: inputData.title,
           content: inputData.content,
         },
-        { withCredentials: true }
+        { withCredentials: true },
       );
       console.log("일기 수정 성공:", response.data);
       alert("제출 완료 ");
@@ -84,7 +84,7 @@ function Writediary() {
         />
         <br />
         <button className={styles.SubmitButton} type="submit">
-          수정하기
+          수정하기ss
         </button>
       </form>
     </div>

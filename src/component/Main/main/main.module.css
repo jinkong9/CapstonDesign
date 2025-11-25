@@ -585,16 +585,16 @@ body {
   }
   .DaliyDateText {
     margin-bottom: 0;
-    font-size: 1.3vh;
+    font-size: 1.5vh;
     font-weight: bold;
   }
   .DaliyTitle2Text {
     margin-top: 0;
-    font-size: 1.5vh;
+    font-size: 1.7vh;
     font-weight: bold;
   }
   .DaliyContentText {
-    font-size: 1.5vh;
+    font-size: 1.9vh;
     font-weight: bold;
   }
   .UserInfoButton {
@@ -619,52 +619,50 @@ body {
   }
 }
 
-/* 🔥 451px — 480px에서 다른 값 **만** 남김 */
 @media (max-width: 451px) {
   .SubNavBox {
-    height: 2.7vh; /* 기존 2.9vh와 다름 → 유지 */
+    height: 2.7vh;
   }
   .SubText {
-    font-size: 1.7vw; /* 기존 1.4vh와 다름 → 유지 */
+    font-size: 1.7vw;
   }
   .HeadText {
-    font-size: 2vh; /* 다름 */
+    font-size: 2vh;
   }
   .HeadBoxText {
-    font-size: 1.7vh; /* 다름 */
+    font-size: 1.7vh;
   }
   .HeadBox {
-    height: 20vh; /* 다름 */
+    height: 20vh;
   }
   .Prompt {
-    font-size: 1.4vh; /* 다름 */
+    font-size: 1.4vh;
   }
   .WriteButton {
-    font-size: 0.8vh; /* 다름 */
-    width: 13vw; /* 다름 */
+    font-size: 0.8vh;
+    width: 13vw;
   }
   .DaliyBox {
-    width: 55vw; /* 다름 */
+    width: 55vw;
   }
   .UserInfoButton {
-    width: 13vw; /* 다름 */
-    font-size: 1.4vw; /* 다름 */
+    width: 13vw;
+    font-size: 1.4vw;
   }
   .Footertext {
-    font-size: 1.4vw; /* 다름 */
+    font-size: 1.4vw;
   }
 }
 
-/* 🔥 431px — 451px에서 다른 값 **만** 남김 */
 @media (max-width: 431px) {
   .SubNavBox {
-    height: 2.8vh; /* 451px에서 2.7vh → 다름 → 유지 */
+    height: 2.8vh;
   }
   .SubText {
-    font-size: 1.9vw; /* 451px 1.7vw → 다름 */
+    font-size: 1.9vw;
   }
   .UserInfoButton {
-    font-size: 1.4vw; /* 같지만 더 작은 범위에서 재정의되므로 유지 */
+    font-size: 1.4vw;
   }
 }
 
