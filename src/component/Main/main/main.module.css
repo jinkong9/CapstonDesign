@@ -295,9 +295,9 @@ body {
     font-weight: bold;
   }
   .UserInfoButton {
-    width: 8vw;
-    height: 3.5vh;
-    font-size: 1.4vh;
+    width: 10vw;
+    height: 6vh;
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 1024px) {
@@ -336,9 +336,9 @@ body {
     font-weight: bold;
   }
   .UserInfoButton {
-    width: 7.5vw;
-    height: 3.9vh;
-    font-size: 1.3vh;
+    width: 10vw;
+    height: 6vh;
+    font-size: 0.9rem;
   }
 }
 @media (max-width: 768px) {
@@ -386,9 +386,9 @@ body {
     font-weight: bold;
   }
   .UserInfoButton {
-    width: 8.5vw;
-    height: 3.9vh;
-    font-size: 1.1vh;
+    width: 11vw;
+    height: 5vh;
+    font-size: 0.8rem;
   }
   .FooterImg {
     width: 35%;
@@ -447,9 +447,9 @@ body {
     font-weight: bold;
   }
   .UserInfoButton {
-    width: 9vw;
-    height: 3.9vh;
-    font-size: 1.1vh;
+    width: 12vw;
+    height: 4.5vh;
+    font-size: 0.75rem;
   }
   .FooterBox {
     width: 24vw;
@@ -511,9 +511,9 @@ body {
     font-weight: bold;
   }
   .UserInfoButton {
-    width: 11vw;
-    height: 3.9vh;
-    font-size: 1.2vh;
+    width: 13vw;
+    height: 4vh;
+    font-size: 0.7rem;
   }
   .FooterImg {
     width: 35%;
@@ -601,9 +601,9 @@ body {
     font-weight: bold;
   }
   .UserInfoButton {
-    width: 16vw;
+    width: 14vw;
     height: 3.5vh;
-    font-size: 1.1vh;
+    font-size: 0.7rem;
   }
   .footerCnontainer {
     height: 35vh;
@@ -650,7 +650,7 @@ body {
   }
   .UserInfoButton {
     width: 13vw;
-    font-size: 1.4vw;
+    font-size: 0.7rem;
   }
   .Footertext {
     font-size: 1.4vw;
@@ -672,7 +672,7 @@ body {
     font-size: 1.9vw;
   }
   .UserInfoButton {
-    font-size: 1.4vw;
+    font-size: 0.6rem;
   }
 }
 
@@ -680,8 +680,27 @@ body {
   .WriteButton {
     font-size: 0.9vh;
   }
+  .UserInfoButton {
+    font-size: 0.6rem;
+  }
 }
-
+@media (max-width: 405px) {
+  .MainText {
+    font-size: 2.5vh;
+  }
+  .WriteButton {
+    font-size: 0.9vh;
+    width: 17vw;
+  }
+  .ButtonImage {
+    height: 1.3vh;
+  }
+  .UserInfoButton {
+    font-size: 0.7rem;
+    width: 14vw;
+    height: 3.2vh;
+  }
+}
 @media (max-width: 400px) {
   .SubNavBox {
     height: 2.6vh;
