@@ -49,7 +49,7 @@ function Main() {
         const response = await api.get("/diaries/recent");
         setDiaryList(response.data.diaries);
         const avatars = response.data.diaries.map(
-          (diary) => diary.author.avatar
+          (diary) => diary.author.avatar,
         );
         setUserAvatar(avatars);
         setQuarter;
@@ -64,7 +64,7 @@ function Main() {
     const responseData = async () => {
       try {
         await Promise.all(
-          diaryList.map((diary) => api.get(`/avatars/${diary.author.avatar}`))
+          diaryList.map((diary) => api.get(`/avatars/${diary.author.avatar}`)),
         );
       } catch (error) {
         console.log("avatar없음");
@@ -132,7 +132,7 @@ function Main() {
         <div className={styles.Maintop}>
           <h2 className={styles.MainText}>최근 사람들이 쓴 일기에요!</h2>
           <button onClick={GoToUserListPage} className={styles.UserInfoButton}>
-            사용자 둘러보기
+            둘러보기
           </button>
         </div>
         <Slider
